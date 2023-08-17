@@ -1,0 +1,77 @@
+<html>
+    <head> 
+        <title>My Trip Around the USA on a Segway</title>
+    </head> 
+
+    <body>
+        <h1>Segway'n USA</h1>
+        <p>Documenting my trip around the US on my very own Segway!</p>
+
+        <h2>August 20, 2012</h2>
+        <img src ="img/segway1.jpg">
+        <p>Well I made it 1200 miles already, and I passed through some interesting places on the way:</p>
+        <ul>
+            <li>Walla, WA</li> 
+            <li>Magic City, ID</li>
+            <li>Bountiful, UT</li>
+            <li>Last Chance, CO</li>
+            <li>Truth or Consequences, NM</li>
+            <li>Why, AZ</li>
+        </ul>
+
+        <h2>July 14, 2012</h2>
+        <p>
+            I saw some <q>Burma Shave style</q> signs on the side of the road today:
+        </p>
+            <blockquote>Passing cars,
+                When you can't see,<br>
+                May get you,<br>
+                A glimpse,<br>
+                Of eternity.
+            </blockquote>
+        <p>
+            I definitely won't be passing any cars.
+        </p>
+        
+
+        <h2>June 2, 2012</h2>
+        <img src = "img/segway2.jpg">
+        <p>My first day of the trip!<q>I can't believe I finally got everything packed and ready to go.</q> Because I'm on a Segway, I wasn't able to bring a whole lot with me:</p>
+        <ol>
+            <li>cellphone</li>
+            <li>iPod</li>
+            <li>digital camera</li>
+            <li>and a protein bar</li>   
+        </ol>
+        <p>
+            Just the essentials. As Lao Tzu would have said, A journey of a thousand miles begins with one Segway.   
+        </p>
+        <dl>
+            <dt>Lorem ipsum dolor sit amet.</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nostrum.</dd>
+            <dt>Lorem ipsum dolor sit.</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.</dd>
+        </dl>
+        <p>&#208;&epsilon;&tau;&#114;&ouml;&igrave;&tau;</p>
+        <pre>Lorem <strong>Lorem, ipsum dolor.</strong> dolor 
+                        sit
+             amet.
+        </pre>
+        <pre><code> <strong>async Task&lt;PaginatedList&lt;InboxComment&gt;&gt; SearchAsync</strong> (BaseSearchQuery searchQuery)
+            {
+                Contract.NotNull(searchQuery, nameof(searchQuery));
+    
+                var instagramId = (await instagramService.GetLinkedInstagramData())?.InstagramId;
+                Contract.Requires&lt;InstagramNotLinkedException&gt;(instagramId != null);
+    
+                searchQuery.Filters.Add(new Filter() { Field = nameof(InboxComment.InstagramId), Operation = FilterOperator.Equals, Value = instagramId });
+                if (!string.IsNullOrEmpty(searchQuery.Search))
+                    searchQuery.Filters.Add(new Filter() { Field = $"{nameof(InboxComment.Customer)}.{nameof(InboxComment.Customer.Username)}", Operation = FilterOperator.Contains, Value = searchQuery.Search });
+    
+                return await commentRepo.GetAllPaginatedAsync(searchQuery);
+            }
+            
+        </code></pre>
+        <pre>                     sdsdfsdf</pre>>
+    </body>
+</html>
